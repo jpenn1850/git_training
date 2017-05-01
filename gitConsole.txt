@@ -1,0 +1,364 @@
+
+M1025616@E2ML21713 MINGW64 /c/dev/workspace/gitTraining/edurekaGit_pennington
+$ git clone https://github.com/jpenn1850/git_training.git
+Cloning into 'git_training'...
+remote: Counting objects: 79, done.
+remote: Total 79 (delta 0), reused 0 (delta 0), pack-reused 79
+Unpacking objects: 100% (79/79), done.
+Checking connectivity... done.
+
+M1025616@E2ML21713 MINGW64 /c/dev/workspace/gitTraining/edurekaGit_pennington
+$ cd git_training/
+
+M1025616@E2ML21713 MINGW64 /c/dev/workspace/gitTraining/edurekaGit_pennington/git_training (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+
+M1025616@E2ML21713 MINGW64 /c/dev/workspace/gitTraining/edurekaGit_pennington/git_training (master)
+$ ls -la
+total 14
+drwxr-xr-x 1 M1025616 Domain Users   0 May  1 09:17 ./
+drwxr-xr-x 1 M1025616 Domain Users   0 May  1 09:17 ../
+drwxr-xr-x 1 M1025616 Domain Users   0 May  1 09:18 .git/
+-rw-r--r-- 1 M1025616 Domain Users 155 May  1 09:17 amber_text.txt
+-rw-r--r-- 1 M1025616 Domain Users  30 May  1 09:17 fileOne.txt
+-rw-r--r-- 1 M1025616 Domain Users 519 May  1 09:17 john_text.txt
+-rw-r--r-- 1 M1025616 Domain Users   0 May  1 09:17 mynewfile.txt
+-rw-r--r-- 1 M1025616 Domain Users  81 May  1 09:17 newfile.txt
+-rw-r--r-- 1 M1025616 Domain Users   0 May  1 09:17 newFileFromJohn.txt
+-rw-r--r-- 1 M1025616 Domain Users  13 May  1 09:17 nnnn.txt
+-rw-r--r-- 1 M1025616 Domain Users  76 May  1 09:17 README.md
+
+M1025616@E2ML21713 MINGW64 /c/dev/workspace/gitTraining/edurekaGit_pennington/git_training (master)
+$ git branch
+* master
+
+M1025616@E2ML21713 MINGW64 /c/dev/workspace/gitTraining/edurekaGit_pennington/git_training (master)
+$ git remote
+origin
+
+M1025616@E2ML21713 MINGW64 /c/dev/workspace/gitTraining/edurekaGit_pennington/git_training (master)
+$ git branch feature
+
+M1025616@E2ML21713 MINGW64 /c/dev/workspace/gitTraining/edurekaGit_pennington/git_training (master)
+$ git checkout feature
+Switched to branch 'feature'
+
+M1025616@E2ML21713 MINGW64 /c/dev/workspace/gitTraining/edurekaGit_pennington/git_training (feature)
+$ git push origin feature
+Username for 'https://github.com': jpenn1850
+Password for 'https://jpenn1850@github.com':
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/jpenn1850/git_training.git
+ * [new branch]      feature -> feature
+
+M1025616@E2ML21713 MINGW64 /c/dev/workspace/gitTraining/edurekaGit_pennington/git_training (feature)
+$ git remote
+origin
+
+M1025616@E2ML21713 MINGW64 /c/dev/workspace/gitTraining/edurekaGit_pennington/git_training (feature)
+$ git status
+On branch feature
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   amber_text.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+M1025616@E2ML21713 MINGW64 /c/dev/workspace/gitTraining/edurekaGit_pennington/git_training (feature)
+$ git add amber_text.txt
+
+M1025616@E2ML21713 MINGW64 /c/dev/workspace/gitTraining/edurekaGit_pennington/git_training (feature)
+$ git status
+On branch feature
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   amber_text.txt
+
+M1025616@E2ML21713 MINGW64 /c/dev/workspace/gitTraining/edurekaGit_pennington/git_training (feature)
+$ git commit -m "Add change to amber_text.txt"
+[feature a0c8773] Add change to amber_text.txt
+ 1 file changed, 1 insertion(+)
+
+M1025616@E2ML21713 MINGW64 /c/dev/workspace/gitTraining/edurekaGit_pennington/git_training (feature)
+$ git status
+On branch feature
+nothing to commit, working directory clean
+
+M1025616@E2ML21713 MINGW64 /c/dev/workspace/gitTraining/edurekaGit_pennington/git_training (feature)
+$ git status
+On branch feature
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        05022107NewFile.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+M1025616@E2ML21713 MINGW64 /c/dev/workspace/gitTraining/edurekaGit_pennington/git_training (feature)
+$ git commit -am "Add new file 05012017NewFile.txt"
+On branch feature
+Untracked files:
+        05022107NewFile.txt
+
+nothing added to commit but untracked files present
+
+M1025616@E2ML21713 MINGW64 /c/dev/workspace/gitTraining/edurekaGit_pennington/git_training (feature)
+$ git add .
+
+M1025616@E2ML21713 MINGW64 /c/dev/workspace/gitTraining/edurekaGit_pennington/git_training (feature)
+$ git status
+On branch feature
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   05022107NewFile.txt
+
+M1025616@E2ML21713 MINGW64 /c/dev/workspace/gitTraining/edurekaGit_pennington/git_training (feature)
+$ git commit -m "Add new file 05022017"
+[feature b572de7] Add new file 05022017
+ 1 file changed, 1 insertion(+)
+ create mode 100644 05022107NewFile.txt
+
+M1025616@E2ML21713 MINGW64 /c/dev/workspace/gitTraining/edurekaGit_pennington/git_training (feature)
+$ git status
+On branch feature
+nothing to commit, working directory clean
+
+M1025616@E2ML21713 MINGW64 /c/dev/workspace/gitTraining/edurekaGit_pennington/git_training (feature)
+$ git log --oneline
+b572de7 Add new file 05022017
+a0c8773 Add change to amber_text.txt
+5f284ab Merge branch 'master' of https://github.com/prashdeep/git_training
+6abf299 committing the changes from amber repo.
+27e9c23 committing to the repo
+2c58253 committing to the repo
+68091da Merge branch 'master' of https://github.com/prashdeep/git_training
+4efe589 vommitting the locl changes to the branch.
+9ce3a88 committin to resolve the conflicts with johns changes.
+2ab5f50 committing amber's changes to local repo
+748e524 committing the changes from john's repo to demonstrate git merge
+fa64688 committing the changes.
+3be7983 committing my changes.
+ec51447 committing the fileOne.txt file.
+b7af7be committing the fileOne.txt file.
+ce1ad07 committing the changes with merged changes
+de5514a committing the changes done from Amber's repository.
+73ff46b committing the changes to jsohn_txt
+56829d9 committing local changes
+1a84159 committing local changes
+ba027f8 committing the john's changes
+962d4e1 Merge branch 'master' of https://github.com/prashdeep/git_training
+6ef7405 commiting the changes from amber repo
+79c23fd committing the updated files
+413993a committing the local changes
+a50c8d4 committing pull changes
+e8b0948 Merge branch 'master' of https://github.com/prashdeep/git_training
+61e59b0 committinh amber's changes.
+081ec7c committing john's changes
+9ed748b adding a new file and modifying the newfile.txt
+
+M1025616@E2ML21713 MINGW64 /c/dev/workspace/gitTraining/edurekaGit_pennington/git_training (feature)
+$
+
+M1025616@E2ML21713 MINGW64 /c/dev/workspace/gitTraining/edurekaGit_pennington/git_training (feature)
+$ git rm newfile.txt
+rm 'newfile.txt'
+
+M1025616@E2ML21713 MINGW64 /c/dev/workspace/gitTraining/edurekaGit_pennington/git_training (feature)
+$ git status
+On branch feature
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        deleted:    newfile.txt
+
+
+M1025616@E2ML21713 MINGW64 /c/dev/workspace/gitTraining/edurekaGit_pennington/git_training (feature)
+$ git commit -m "Remove newfile.txt"
+[feature 34873bd] Remove newfile.txt
+ 1 file changed, 3 deletions(-)
+ delete mode 100644 newfile.txt
+
+M1025616@E2ML21713 MINGW64 /c/dev/workspace/gitTraining/edurekaGit_pennington/git_training (feature)
+$ git status
+On branch feature
+nothing to commit, working directory clean
+
+M1025616@E2ML21713 MINGW64 /c/dev/workspace/gitTraining/edurekaGit_pennington/git_training (feature)
+$ git fetch
+
+M1025616@E2ML21713 MINGW64 /c/dev/workspace/gitTraining/edurekaGit_pennington/git_training (feature)
+$ git push origin feature
+Username for 'https://github.com': jpenn1850
+Password for 'https://jpenn1850@github.com':
+Counting objects: 8, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (8/8), 794 bytes | 0 bytes/s, done.
+Total 8 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+To https://github.com/jpenn1850/git_training.git
+   5f284ab..34873bd  feature -> feature
+
+M1025616@E2ML21713 MINGW64 /c/dev/workspace/gitTraining/edurekaGit_pennington/git_training (feature)
+$ git status
+On branch feature
+nothing to commit, working directory clean
+
+M1025616@E2ML21713 MINGW64 /c/dev/workspace/gitTraining/edurekaGit_pennington/git_training (feature)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+
+M1025616@E2ML21713 MINGW64 /c/dev/workspace/gitTraining/edurekaGit_pennington/git_training (master)
+$ git merge feature
+Updating 5f284ab..34873bd
+Fast-forward
+ 05022107NewFile.txt | 1 +
+ amber_text.txt      | 1 +
+ newfile.txt         | 3 ---
+ 3 files changed, 2 insertions(+), 3 deletions(-)
+ create mode 100644 05022107NewFile.txt
+ delete mode 100644 newfile.txt
+
+M1025616@E2ML21713 MINGW64 /c/dev/workspace/gitTraining/edurekaGit_pennington/git_training (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+nothing to commit, working directory clean
+
+M1025616@E2ML21713 MINGW64 /c/dev/workspace/gitTraining/edurekaGit_pennington/git_training (master)
+$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': jpenn1850
+Password for 'https://jpenn1850@github.com':
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/jpenn1850/git_training.git
+   5f284ab..34873bd  master -> master
+
+M1025616@E2ML21713 MINGW64 /c/dev/workspace/gitTraining/edurekaGit_pennington/git_training (master)
+$ git remote
+origin
+
+M1025616@E2ML21713 MINGW64 /c/dev/workspace/gitTraining/edurekaGit_pennington/git_training (master)
+$ git branch -r
+  origin/HEAD -> origin/master
+  origin/feature
+  origin/master
+
+M1025616@E2ML21713 MINGW64 /c/dev/workspace/gitTraining/edurekaGit_pennington/git_training (master)
+$ git push origin :feature
+Username for 'https://github.com': jpenn1850
+Password for 'https://jpenn1850@github.com':
+To https://github.com/jpenn1850/git_training.git
+ - [deleted]         feature
+
+M1025616@E2ML21713 MINGW64 /c/dev/workspace/gitTraining/edurekaGit_pennington/git_training (master)
+$ git branch -r
+  origin/HEAD -> origin/master
+  origin/master
+
+
+
+M1025616@E2ML21713 MINGW64 /c/dev/workspace/gitTraining/edurekaGit_pennington/git_training (master)
+$ git rm nnnn.txt
+rm 'nnnn.txt'
+
+M1025616@E2ML21713 MINGW64 /c/dev/workspace/gitTraining/edurekaGit_pennington/git_training (master)
+$ git rm john_text.txt
+rm 'john_text.txt'
+
+M1025616@E2ML21713 MINGW64 /c/dev/workspace/gitTraining/edurekaGit_pennington/git_training (master)
+$ git rm newFileFromJohn.txt
+rm 'newFileFromJohn.txt'
+
+M1025616@E2ML21713 MINGW64 /c/dev/workspace/gitTraining/edurekaGit_pennington/git_training (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        deleted:    john_text.txt
+        deleted:    newFileFromJohn.txt
+        deleted:    nnnn.txt
+
+
+M1025616@E2ML21713 MINGW64 /c/dev/workspace/gitTraining/edurekaGit_pennington/git_training (master)
+$ git commit -m "remove three files"
+[master 9255691] remove three files
+ 3 files changed, 13 deletions(-)
+ delete mode 100644 john_text.txt
+ delete mode 100644 newFileFromJohn.txt
+ delete mode 100644 nnnn.txt
+
+M1025616@E2ML21713 MINGW64 /c/dev/workspace/gitTraining/edurekaGit_pennington/git_training (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working directory clean
+
+M1025616@E2ML21713 MINGW64 /c/dev/workspace/gitTraining/edurekaGit_pennington/git_training (master)
+$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': jpenn1850
+Password for 'https://jpenn1850@github.com':
+Counting objects: 2, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 233 bytes | 0 bytes/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/jpenn1850/git_training.git
+   34873bd..9255691  master -> master
+
+M1025616@E2ML21713 MINGW64 /c/dev/workspace/gitTraining/edurekaGit_pennington/git_training (master)
+$
